@@ -100,8 +100,8 @@
     <Position X="12" Y="7.25" Width="1.5" />
     <AssociationLine Name="status" Type="TVM.TransactionStatus" ManuallyRouted="true">
       <Path>
-        <Point X="13.5" Y="9.026" />
-        <Point X="13.702" Y="9.026" />
+        <Point X="13.5" Y="8.939" />
+        <Point X="13.702" Y="8.939" />
         <Point X="13.702" Y="12.583" />
         <Point X="14.25" Y="12.583" />
       </Path>
