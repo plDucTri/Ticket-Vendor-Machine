@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TVM.TicketVendorMachine">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="TicketPrinter" Type="TVM.TicketPrinter">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.115" Y="0.211" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgQAAIAAAAAAAAAAAAABAAACAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketVendorMachine.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TVMScreen" />
+      <Property Name="TVMController" />
+      <Property Name="TicketPrinter" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TVM.TVMController">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <AssociationLine Name="TVMScreen" Type="TVM.TVMScreen">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.952" Y="0.583" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgCAAAIAAAAAAAAAoAABQAAAAAAAAEAAAAAAAAAACAA=</HashCode>
+      <FileName>TVMController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TVMScreen" />
+      <Property Name="PaymentService" />
+      <Property Name="TransactionRepository" />
+      <Property Name="TicketPrinter" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TVM.TVMScreen">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAACAAAAAIAACAAAAAAAA=</HashCode>
+      <FileName>TVMScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TVM.PaymentService">
+    <Position X="8" Y="5.25" Width="1.5" />
+    <AssociationLine Name="PaymentGateway" Type="TVM.PaymentGateway">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.341" Y="0.135" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Payment" Type="TVM.Payment">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.051" Y="0.261" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAgQAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PaymentService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PaymentGateway" />
+      <Property Name="Payment" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TVM.TransactionRepository">
+    <Position X="10.25" Y="5.25" Width="1.5" />
+    <AssociationLine Name="Transaction" Type="TVM.Transaction">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.048" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAEAAAAAAAAAAgAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>TransactionRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Transaction" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TVM.PaymentGateway">
+    <Position X="8.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>PaymentGateway.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.56" />
+  </Class>
+  <Class Name="TVM.TicketPrinter">
+    <Position X="14.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAACAAAAQgAAACAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketPrinter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ticket" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TVM.Transaction">
+    <Position X="12" Y="7.25" Width="1.5" />
+    <AssociationLine Name="status" Type="TVM.TransactionStatus" ManuallyRouted="true">
+      <Path>
+        <Point X="13.5" Y="9.026" />
+        <Point X="13.702" Y="9.026" />
+        <Point X="13.702" Y="12.583" />
+        <Point X="14.25" Y="12.583" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.623" Y="0.021" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Destination" Type="TVM.Destination">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.117" Y="-0.267" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AARAAAAAAAAAIAACAIAgAAAAAAAAgAAEAAQAAAAAAAA=</HashCode>
+      <FileName>Transaction.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="status" />
+      <Property Name="Destination" />
+      <Property Name="Ticket" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TVM.Payment">
+    <Position X="7.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAMAAAgAABAAQAAAAAAAA=</HashCode>
+      <FileName>Payment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="status" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TVM.CardPayment">
+    <Position X="5.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CardPayment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TVM.QRPayment">
+    <Position X="7.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAACAAAAAAAAAAAAAABAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>QRPayment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TVM.Refund">
+    <Position X="9.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAAAAAAAAAAAACAAAAAgAAACAAAAAAAAAA=</HashCode>
+      <FileName>Refund.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TVM.Ticket">
+    <Position X="14.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAAAAAABAAAAAAQCAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ticket.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="status" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TVM.Destination">
+    <Position X="10.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAEAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Destination.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Fare" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TVM.Fare">
+    <Position X="11.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAgAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Fare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TVM.IPaymentGateway">
+    <Position X="8.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>IPaymentGateway.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TVM.TransactionStatus">
+    <Position X="14.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAIAAAAAAAAAAAAAAAQAABAAIAAAAAA=</HashCode>
+      <FileName>TransactionStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TVM.PaymentStatus">
+    <Position X="5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAADAAIAACAAA=</HashCode>
+      <FileName>PaymentStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TVM.TicketStatus">
+    <Position X="16.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAAABAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TicketStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
