@@ -21,7 +21,7 @@ namespace TVM
 
         public void request()
         {
-            throw new System.NotImplementedException();
+            status = "Requested";
         }
     }
 }

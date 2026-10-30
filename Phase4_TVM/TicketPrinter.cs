@@ -7,6 +7,12 @@ namespace TVM
 {
     public class TicketPrinter
     {
+        public TicketPrinter()
+        {
+            printerId = "PRN-01";
+            paperLevel = 100;
+        }
+
         public string printerId
         { get; set; }
 
@@ -18,7 +24,7 @@ namespace TVM
 
         public bool printTicket(Ticket ticket)
         {
-            if (isPaperLow())
+            if (!checkStatus() || isPaperLow())
             {
                 ticket.status = TicketStatus.PrintFailed;
                 return false;

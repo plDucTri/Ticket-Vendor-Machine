@@ -1,0 +1,12 @@
+C:\Users\LENOVO\Downloads\Nhat Minh\CNPM\tvm1\TVMDemo\obj\Debug\TVMDemo.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Downloads\Nhat Minh\CNPM\tvm1\TVMDemo\obj\Debug\TVMDemo.Properties.Resources.resources
+C:\Users\LENOVO\Downloads\Nhat Minh\CNPM\tvm1\TVMDemo\obj\Debug\TVMDemo.csproj.GenerateResource.cache
+C:\Users\LENOVO\Downloads\Nhat Minh\CNPM\tvm1\TVMDemo\obj\Debug\TVMDemo.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Downloads\Nhat Minh\CNPM\tvm1\TVMDemo\bin\Debug\TVMDemo.exe.config
+C:\Users\LENOVO\Downloads\Nhat Minh\CNPM\tvm1\TVMDemo\bin\Debug\TVMDemo.exe
+C:\Users\LENOVO\Downloads\Nhat Minh\CNPM\tvm1\TVMDemo\bin\Debug\TVMDemo.pdb
+C:\Users\LENOVO\Downloads\Nhat Minh\CNPM\tvm1\TVMDemo\bin\Debug\TVM.dll
+C:\Users\LENOVO\Downloads\Nhat Minh\CNPM\tvm1\TVMDemo\bin\Debug\TVM.pdb
+C:\Users\LENOVO\Downloads\Nhat Minh\CNPM\tvm1\TVMDemo\obj\Debug\TVMDemo.csproj.Up2Date
+C:\Users\LENOVO\Downloads\Nhat Minh\CNPM\tvm1\TVMDemo\obj\Debug\TVMDemo.exe
+C:\Users\LENOVO\Downloads\Nhat Minh\CNPM\tvm1\TVMDemo\obj\Debug\TVMDemo.pdb

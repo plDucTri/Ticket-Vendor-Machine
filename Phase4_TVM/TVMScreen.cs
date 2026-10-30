@@ -7,24 +7,24 @@ namespace TVM
 {
     public class TVMScreen
     {
-        public void displayDestinations()
+        public List<string> displayDestinations(List<Destination> destinations)
         {
-            throw new System.NotImplementedException();
+            return destinations.Select(d => d.name.PadRight(28) + displayFare(d.Fare)).ToList();
         }
 
-        public void displayFare()
+        public string displayFare(Fare fare)
         {
-            throw new System.NotImplementedException();
+            return fare.amount.ToString("N0") + " VND";
         }
 
-        public void displayQRCode()
+        public string displayQRCode(QRPayment payment)
         {
-            throw new System.NotImplementedException();
+            return payment.generateQRCode();
         }
 
-        public void displayMessage()
+        public string displayMessage(string english, string vietnamese)
         {
-            throw new System.NotImplementedException();
+            return english + "\n\n" + vietnamese;
         }
     }
 }
