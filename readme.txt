@@ -9,6 +9,11 @@ https://www.figma.com/design/zp3wZjqfM5GrwHQVnmTpJq/524k0022_524k0024_524k0025_5
 
 Database script instructions
 
+Demo has a database for running:
+•	Name of database: TVMDemo
+•	Connectionstring: In TVMDemo’s App.config code, under <connectionString> code block
+Download TVM, TVMDemo and database.sql. Run the database.sql in SSMS, then open the TVM, TVMDemo in Visual Studio, go to TVMDemo’s App.config and change connectionString to your SSMS SQL Server instance then confirm connection. After that, press F5.
+
 %contribution
 Member			Student ID	Phase		% contribution
 Pham Minh Tai		524K0025	Phase 1		20%
